@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Metal+Mania&family=Montserrat:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,600;0,700;1,300&family=Tenali+Ramakrishna&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown Clock</title>
+</head>
+<body>
+    <div id="main-container">
+        <div id="inputs">
+            <div id="hour-input">
+                <label for="hr">HH</label>
+                <input type="number" name="hour" id="hr" min="0" max="99" class="input">
+            </div>
+            <span><strong> : </strong></span>
+            <div id="min-input">
+                <label for="min">MM</label>
+                <input type="number" name="minute" id="min" min="0" max="59" class="input">
+            </div>
+            <span><strong> : </strong></span>
+            <div id="sec-input">
+                <label for="sec">SS</label>
+                <input type="number" name="seconds" min="0" max="59" id="sec" class="input">
+            </div>
+        </div>
+
+        <div id="controls">
+            <button type="button" id="play">START</button>
+            <button type="button" id="stop">STOP</button>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
